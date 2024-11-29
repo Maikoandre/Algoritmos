@@ -11,27 +11,24 @@ int main(){
     int vet[5];
     scanner(vet, 5);
     print(vet, 5);
-    cout << "Maior num do vetor: " << maiorElemento(vet, 5);
-    cout << "Menor num do vetor: " << menorElemento(vet, 5);
-    cout << "Media dos valores do vetor: " << calcularMedia(vet, 5);
+    cout << "Maior num do vetor: " << maiorElemento(vet, 5) << endl;
+    cout << "Menor num do vetor: " << menorElemento(vet, 5) << endl;
+    cout << "Media dos valores do vetor: " << calcularMedia(vet, 5) << endl;
 }
 
 void scanner(int vet[], int tamanho){
-    cout << "Digite valores pares para o vetor:" << endl;
+    cout << "Digite os valores do vetor:" << endl;
     for(int i = 0; i < tamanho; i++){
         cin >> vet[i];
-        while(vet[i] % 2 != 0){
-            cout << "Numero invalido! Digite novamente: ";
-            cin >> vet[i];
-        }
     }
 }
 
 void print(int vet[], int tamanho){
-    cout << "Valores do vetor:" << endl;
+    cout << "Valores do vetor: ";
     for(int i = 0; i < tamanho; i++){
         cout << vet[i] << " ";
     }
+    cout << endl;
 }
 
 float calcularMedia(int vet[], int tamanho){
